@@ -13,7 +13,7 @@ A card is a container, a JSON data block and one pinned script tag:
 
 - Always pin a full 40-character commit and its integrity hash; never a branch or tag.
 - One card per page: the ids `kc` and `cd` are fixed.
-- The data is strict JSON. Write every `<` inside a string as `<`.
+- The data is strict JSON. Write every `<` inside a string as `\u003c`.
 - Data keys: `status` `[tone, chip, text]`; `blocks` (points, metrics, progress, compare, rows, timeline, detail, note);
   `move` (`steps`, `ask`); `side` (`next`, `nv`, `wait`, `opus`, `allow`). Points and steps take a string or
   `[headline, detail]`.
