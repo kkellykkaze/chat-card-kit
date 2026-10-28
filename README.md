@@ -18,6 +18,8 @@ A card is a container, a JSON data block and one pinned script tag:
   `move` (`steps`, `ask`); `side` (`next`, `nv`, `wait`, `opus`, `allow`). Points and steps take a string or
   `[headline, detail]`.
 - Button text is sent with a `(card) ` prefix; buttons whose label reads as an approval phrase are refused.
+- After each click the card shows the exact text under the buttons, says whether the chat accepted it, and tries to
+  copy it to the clipboard, because a chat can silently ignore a button. Refused buttons show and copy nothing.
 
 ## Releasing a new version
 
